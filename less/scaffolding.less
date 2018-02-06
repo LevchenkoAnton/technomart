@@ -1,14 +1,39 @@
 @import "variables.less";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  line-height: 26px;
-  color: #333333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  .opn-reg;
+  .base-text;
   font-size: 14px;
-  text-transform: uppercase;
+  color: @base-text;
 
-  background-color: @body-bg;
+  background: #ffffff;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button, input {
+  border: none;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
 }

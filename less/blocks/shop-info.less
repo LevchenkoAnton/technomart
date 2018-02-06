@@ -1,0 +1,79 @@
+.shop-info {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 50px 10px 40px 10px;
+    max-width: 960px;
+  }
+}
+
+.shop {
+
+  &__description {
+    max-width: 250px;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 25px;
+    color: @logo-bg;
+    .base-text-italic;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    display: block;
+    padding: 6px 45px 6px 70px;
+    color: @logo-bg;
+    font-size: 21px;
+    border: 3px solid #fff;
+  }
+
+  &__phone:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 25px;
+    height: 25px;
+    left: 10px;
+    background: url("../img/icons/phone-icon.png") no-repeat center center;
+  }
+
+  &__address {
+    display: block;
+    text-align: center;
+    color: @header-top-bg;
+  }
+}
+
+.login {
+  position: relative;
+  display: block;
+  float: left;
+  padding: 12px 20px 12px 40px;
+  margin-right: 20px;
+  font-size: 21px;
+  background: #fff;
+}
+
+.login:before {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 10px;
+  width: 25px;
+  height: 23px;
+  background: url("../img/icons/login-icon.png") no-repeat center center;
+}
+
+.registration {
+  display: block;
+  float: right;
+  padding: 12px 20px 12px 20px;
+  font-size: 21px;
+  background: #fff;
+}

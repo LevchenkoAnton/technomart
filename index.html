@@ -2,10 +2,79 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Technomart</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="header">
+    <div class="header-top">
+        <div class="header-top__wrapper">
+            <a href="#" class="logo">ТЕХНОМАРТ</a>
+            <div class="search">
+                <form action="#">
+                    <input type="search" class="search__field" id="search__field" name="search__field" placeholder="Поиск:">
+                </form>
+            </div>
+            <div class="order">
+                <ul class="order__list">
+                    <li class="order__item order__item--bookmark">
+                        <a href="">Закладки: 0</a>
+                    </li>
+                    <li class="order__item order__item--cart">
+                        <a href="">Корзина: 0</a>
+                    </li>
+                    <li class="order__item order__item--arrange">
+                        <a href="">Оформить заказ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="shop-info">
+        <div class="shop-info__wrapper">
+            <div class="shop__description">
+                <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            </div>
+            <div class="shop__contacts">
+                <a href="tel:+7 (812) 555-05-55" class="shop__phone">+7 (812) 555-05-55</a>
+                <p class="shop__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
+            <div class="user-block">
+                <button class="login" type="button">Войти</button>
+                <button class="registration" type="button">Регистрация</button>
+            </div>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Новости</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Спецпредложения</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Доставка</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
 
     <script src="js/main.js"></script>
