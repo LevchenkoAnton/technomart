@@ -8,74 +8,158 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header-top">
-        <div class="header-top__wrapper">
-            <a href="#" class="logo">ТЕХНОМАРТ</a>
-            <div class="search">
-                <form action="#">
-                    <input type="search" class="search__field" id="search__field" name="search__field" placeholder="Поиск:">
-                </form>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top__wrapper">
+                <a href="#" class="logo">ТЕХНОМАРТ</a>
+                <div class="search">
+                    <form action="#">
+                        <input type="search" class="search__field" id="search__field" name="search__field" placeholder="Поиск:">
+                    </form>
+                </div>
+                <div class="order">
+                    <ul class="order__list">
+                        <li class="order__item order__item--bookmark">
+                            <a href="">Закладки: 0</a>
+                        </li>
+                        <li class="order__item order__item--cart">
+                            <a href="">Корзина: 0</a>
+                        </li>
+                        <li class="order__item order__item--arrange">
+                            <a href="">Оформить заказ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="order">
-                <ul class="order__list">
-                    <li class="order__item order__item--bookmark">
-                        <a href="">Закладки: 0</a>
+        </div>
+        <div class="shop-info">
+            <div class="shop-info__wrapper">
+                <div class="shop__description">
+                    <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+                </div>
+                <div class="shop__contacts">
+                    <a href="tel:+7 (812) 555-05-55" class="shop__phone">+7 (812) 555-05-55</a>
+                    <p class="shop__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
+                <div class="user-block">
+                    <button class="login" type="button">Войти</button>
+                    <button class="registration" type="button">Регистрация</button>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#">Главная</a>
                     </li>
-                    <li class="order__item order__item--cart">
-                        <a href="">Корзина: 0</a>
+                    <li class="main-nav__item">
+                        <a href="#">Компания</a>
                     </li>
-                    <li class="order__item order__item--arrange">
-                        <a href="">Оформить заказ</a>
+                    <li class="main-nav__item">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>
             </div>
+        </nav>
+    </header>
+    <section class="promo">
+        <div class="promo__wrapper">
+           <div class="promo__item promo__item--materials item-new">
+               <h2 class="promo__title">Материалы</h2>
+               <a href="#" class="promo__link">на любой вкус</a>
+           </div>
+           <div class="promo__item promo__item--tools">
+               <h2 class="promo__title">Инструмент</h2>
+               <a href="#" class="promo__link">НА ВСЕ СЛУЧАИ</a>
+           </div>
+           <div class="promo__item promo__item--technics">
+               <h2 class="promo__title">Техника</h2>
+               <a href="#" class="promo__link">для стройки</a>
+           </div>
+           <div class="promo-slider">
+               <input type="radio" id="promo-slider__btn-1" name="promo-slider__toggle" checked>
+               <input type="radio" id="promo-slider__btn-2" name="promo-slider__toggle">
+               <div class="promo-slider__controls">
+                   <label for="promo-slider__btn-1"></label>
+                   <label for="promo-slider__btn-2"></label>
+               </div>
+               <div class="promo-slider__buttons">
+                   <label for="promo-slider__btn-1" class="btn-prev"></label>
+                   <label for="promo-slider__btn-2" class="btn-next"></label>
+               </div>
+               <div class="promo-slider__list">
+                   <div class="promo-slider__item promo-slider__item-first" id="slide1">
+                       <p class="promo-slider__title">Перфораторы</p>
+                       <p class="promo-slider__description">Настоящие мужские игрушки</p>
+                       <a href="#" class="promo-slider__link">ОТКРЫТЬ КАТАЛОГ</a>
+                   </div>
+                   <div class="promo-slider__item promo-slider__item-second" id="slide2">
+                       <p class="promo-slider__title">Дрели</p>
+                       <p class="promo-slider__description">Соседям на радость!</p>
+                       <a href="#" class="promo-slider__link">ОТКРЫТЬ КАТАЛОГ</a>
+                   </div>
+               </div>
+           </div>
+           <div>
+               <div class="promo__item promo__item--sale">
+                   <h2 class="promo__title">Скидки 50%</h2>
+                   <a href="#" class="promo__link">На 350 ТОВАРОВ</a>
+               </div>
+               <div class="promo__item promo__item--free-shipping">
+                   <h2 class="promo__title">Доставка</h2>
+                   <a href="#" class="promo__link">бесплатно</a>
+               </div>
+           </div>
         </div>
-    </div>
-    <div class="shop-info">
-        <div class="shop-info__wrapper">
-            <div class="shop__description">
-                <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-            </div>
-            <div class="shop__contacts">
-                <a href="tel:+7 (812) 555-05-55" class="shop__phone">+7 (812) 555-05-55</a>
-                <p class="shop__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
-            <div class="user-block">
-                <button class="login" type="button">Войти</button>
-                <button class="registration" type="button">Регистрация</button>
-            </div>
-        </div>
-    </div>
-    <nav class="main-nav">
-        <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="#">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Компания</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Каталог</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Новости</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Спецпредложения</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Доставка</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    </section>
 
+    <section class="popular">
+        <div class="popular__wrapper">
+            <div class="popular__header">
+                <h2 class="popular__title">Популярные товары:</h2>
+                <a href="#" class="popular__link">все популярные товары</a>
+            </div>
+            <div class="popular__list">
+                <div class="catalog-item">
+                    <img src="img/bosh_bfg_9000.jpg" alt="BOSCH BFG 9000" class="catalog-item__img">
+                    <p class="catalog-item__title">Перфоратор BOSCH BFG 9000</p>
+                    <span class="catalog-item__price">32500 Р.</span>
+                    <span class="catalog-item__new-price">25500 Р.</span>
+                </div>
+                <div class="catalog-item">
+                    <img src="img/bosh_bfg_3000.jpg" alt="BOSCH BFG 3000" class="catalog-item__img">
+                    <p class="catalog-item__title">Перфоратор BOSCH BFG 3000</p>
+                    <span class="catalog-item__price">22500 Р.</span>
+                    <span class="catalog-item__new-price">15500 Р.</span>
+                </div>
+                <div class="catalog-item">
+                    <img src="img/bosh_bfg_6000.jpg" alt="BOSCH BFG 6000" class="catalog-item__img">
+                    <p class="catalog-item__title">Перфоратор BOSCH BFG 6000</p>
+                    <span class="catalog-item__price">30500 Р.</span>
+                    <span class="catalog-item__new-price">25500 Р.</span>
+                </div>
+                <div class="catalog-item item-new">
+                    <img src="img/bosh_bfg_2000.jpg" alt="BOSCH BFG 2000" class="catalog-item__img">
+                    <p class="catalog-item__title">Перфоратор BOSCH BFG 2000</p>
+                    <span class="catalog-item__price"></span>
+                    <span class="catalog-item__new-price">25500 Р.</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/main.js"></script>
 </body>

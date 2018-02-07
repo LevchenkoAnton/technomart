@@ -1,0 +1,39 @@
+.popular {
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 960px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: @popular-bg;
+  }
+
+  &__title {
+    margin: 0;
+    .base-text;
+    font-size: 30px;
+    color: @title-color;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 30px;
+    color: #fff;
+    background: @btn-bg;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

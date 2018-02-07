@@ -1,0 +1,89 @@
+.promo {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 50px 10px;
+    max-width: 960px;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+    padding: 22px 20px;
+    padding-right: 145px;
+    margin-bottom: 20px;
+    color: @promo-text;
+  }
+
+  &__item:before {
+    position: absolute;
+    content: '';
+    display: block;
+    right: 30px;
+    width: 80px;
+    height: 70px;
+  }
+
+  &__item--materials {
+    background: @materials-bg;
+    margin-right: 20px;
+  }
+
+  &__item--materials:before {
+    background: url("../img/icons/materials-icon.png") no-repeat center center;
+  }
+
+  &__item--tools {
+    background: @tools-bg;
+    margin-right: 20px;
+  }
+
+  &__item--tools:before {
+    background: url("../img/icons/tools-icon.png") no-repeat center center;
+  }
+
+  &__item--technics {
+    background: @technic-bg;
+  }
+
+  &__item--technics:before {
+    background: url("../img/icons/technic-icon.png") no-repeat center center;
+  }
+
+  &__item--sale {
+    background: @sale-bg;
+  }
+
+  &__item--sale:before {
+    background: url("../img/icons/sale-icon.png") no-repeat center center;
+  }
+
+  &__item--free-shipping {
+    background: @free-shipping-bg;
+  }
+
+  &__item--free-shipping:before {
+    background: url("../img/icons/free-shipping-icon.png") no-repeat center center;
+  }
+
+  &__title {
+    .base-text-bold;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    display: block;
+    width: 135px;
+    padding: 10px 20px;
+    text-align: center;
+    color: @promo-text;
+    text-transform: uppercase;
+    background: rgba(0,0,0,.1);
+    border-radius: 3px;
+  }
+}
