@@ -1,7 +1,7 @@
 .header {
+  position: relative;
   color: @header-text;
   background: @base-bg;
-  padding-bottom: 60px;
 }
 
 .header-top {
@@ -9,6 +9,7 @@
 
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -24,7 +25,7 @@
 .search {
 
   &__field {
-    padding-left: 40px;
+    padding-left: 50px;
     max-width: 200px;
     font-size: 17px;
     color: @header-text;
@@ -70,5 +71,34 @@
 
   &__item:last-child {
     padding: 10px 20px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .header-top {
+
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .search {
+    margin: 20px 0 10px 0;
+  }
+
+  .search__field, .order__item {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .order {
+    &__list{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

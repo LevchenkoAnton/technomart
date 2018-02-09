@@ -12,6 +12,34 @@
         <div class="header-top">
             <div class="header-top__wrapper">
                 <a href="#" class="logo">ТЕХНОМАРТ</a>
+                <button class="mobile__open-nav">Открыть меню</button>
+                <!--mobile menu-->
+                <nav class="mobile-nav mobile-nav--closed">
+                    <button class="mobile-nav__close" type="button">Закрыть меню</button>
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Компания</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="search">
                     <form action="#">
                         <input type="search" class="search__field" id="search__field" name="search__field" placeholder="Поиск:">
@@ -41,12 +69,13 @@
                     <a href="tel:+7 (812) 555-05-55" class="shop__phone">+7 (812) 555-05-55</a>
                     <p class="shop__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
-                <div class="user-block">
+                <div class="shop__login">
                     <button class="login" type="button">Войти</button>
                     <button class="registration" type="button">Регистрация</button>
                 </div>
             </div>
         </div>
+        <!--desctop menu-->
         <nav class="main-nav">
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
@@ -288,6 +317,52 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__description">
+                <a href="#" class="logo">ТЕХНОМАРТ</a>
+                <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p class="footer__phone">+7 (812) 555-05-55</p>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a href="#">Компания</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Материалы</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Техника</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Инструмент</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="coppyright">
+            <p>
+                © 2010–2017 Компания «Техномарт»<br>
+                Все права защищены</p>
+        </div>
+    </footer>
 
 
     <script src="js/main.js"></script>
