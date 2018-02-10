@@ -700,6 +700,10 @@ a {
   .catalog-item__title {
     font-size: 14px;
   }
+  .catalog-item__new-price:after {
+   border: 19px solid #fff;
+   border-left: 19px solid #ff5357;
+ }
 }
 .services {
   background: #f4f8fa;
