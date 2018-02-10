@@ -23,6 +23,8 @@
 }
 
 .search {
+  line-height: 40px;
+  padding: 0 5px;
 
   &__field {
     padding-left: 50px;
@@ -31,6 +33,11 @@
     color: @header-text;
     background: url("../img/icons/search-icon.png") no-repeat left center;
   }
+}
+
+.search:hover,
+.search:active {
+  background-color: @header-top-bg-hover;
 }
 
 .order {
@@ -45,6 +52,14 @@
     font-size: 17px;
     line-height: 20px;
     padding: 10px 20px 10px 50px;
+  }
+
+  &__item:hover {
+    background: @header-top-bg-hover;
+  }
+
+  &__item:active {
+    background: @header-top-bg-active;
   }
 
   &__item:before {
@@ -67,6 +82,14 @@
 
   &__item--arrange {
     background: @arrange-bg;
+  }
+
+  &__item--arrange:hover {
+    background: @arrange-bg-hover;
+  }
+
+  &__item--arrange:active {
+    background: @arrange-bg-active;
   }
 
   &__item:last-child {

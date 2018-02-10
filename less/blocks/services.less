@@ -62,6 +62,11 @@
     border-top: 1px solid lighten(@nav-bg, 10%);
   }
 
+  &__nav-item:hover {
+    border: 1px solid #293449;
+    background: #293449;
+  }
+
   &__nav-item:active {
     color: @nav-bg;
     border: 1px solid #fff;
@@ -119,6 +124,14 @@
     background: @btn-bg;
     border-radius: 3px;
     text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    background: @btn-bg-hover;
+  }
+
+  &__btn:active {
+    background: @btn-bg-active;
   }
 }
 
