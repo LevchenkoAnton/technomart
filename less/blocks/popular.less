@@ -53,9 +53,62 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 220px;
-    height: 146px;
+    width: 206px;
+    height: 125px;
     margin-bottom: 20px;
     border: 1px solid #ebebeb;
+  }
+}
+
+@media (max-width: 940px) {
+
+  .popular {
+
+    &__header {
+      padding: 15px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    &__link {
+      padding: 5px 15px;
+    }
+  }
+
+  .popular-goods {
+
+    &__list {
+      justify-content: space-around;
+    }
+  }
+
+  .popular-brands {
+
+    &__list {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+
+  .popular {
+
+    &__header {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      margin: 0 auto;
+    }
   }
 }

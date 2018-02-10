@@ -87,14 +87,17 @@
 
   &__item--delivery:before {
     background: url("../img/icons/car-icon.png") no-repeat center center;
+    background-size: contain;
   }
 
   &__item--garantee:before {
     background: url("../img/icons/guaranty-icon.png") no-repeat center center;
+    background-size: contain;
   }
 
   &__item--credit:before {
     background: url("../img/icons/credit-icon.png") no-repeat center center;
+    background-size: contain;
   }
 
   &__title {
@@ -134,4 +137,80 @@
   color: @nav-bg;
   border: 1px solid #fff;
   background: #fff;
+}
+
+@media (max-width: 910px) {
+
+  .services {
+
+    &__wrapper {
+      padding: 20px 10px;
+    }
+
+    &__tab {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    &__description {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+
+  .services-tab {
+
+    &__nav-list {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__nav-list:after {
+      display: none;
+    }
+
+    &__nav-item {
+      width: auto;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    &__list {
+      margin: 0 auto;
+    }
+
+    &__item {
+      padding: 0;
+      text-align: center;
+    }
+
+    &__item br {
+      display: none;
+    }
+
+    &__item:before {
+      display: none;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__btn {
+      margin: 0 auto;
+      padding: 5px 15px;
+    }
+  }
 }
